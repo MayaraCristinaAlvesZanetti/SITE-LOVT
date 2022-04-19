@@ -1,18 +1,18 @@
 /* Resetar configurações */
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-/*Estilos Gerais */
+/* Estilos Gerais */
 body {
     font-family: "Ropa Sans", sans-serif;
 }
 
-/* CONTAINER GERAL*/
+/* Container Geral */
 .container {
-    /*border: 2px solid rgb(74, 80, 80);*/
+    /* border: 2px solid aqua; */
     width: 85%;
     max-width: 1200px;
     margin: 0 auto;
@@ -20,8 +20,8 @@ body {
 
 /* HEADER */
 .header {
+    /* border: 2px solid black; */
     box-shadow: 1px 1px 10px #aaa;
-    position: fixed;
     top: 0;
     width: 100%;
     background: #fff;
@@ -34,22 +34,47 @@ body {
     height: 70px;
 }
 
-/* HEADER LOGO*/
+/* Header Logo */
 .header__logo {
+    /* border: 2px solid red; */
     display: flex;
 }
 
 .header__logo img {
+    /* border: 2px solid magenta; */
     width: 60px;
     margin-right: 5px;
 }
 
 .header__text {
+    /* border: 2px solid blue; */
     color: #aaa;
     font-size: 0.7rem;
 }
 
-/* Section */
+/*SETAS*/
+.setaesquerda {
+    color: white;
+    position: absolute;
+    width: 15px;
+    margin-left: 510px;
+    width: 35px;
+    height: 35px;
+    margin-top: 270px;
+    margin-left: 210px;
+}
+.setadireita {
+    color: white;
+    position: absolute;
+    width: 15px;
+    margin-left: 510px;
+    width: 35px;
+    height: 35px;
+    margin-top: 280px;
+    margin-left: 1090px;
+}
+
+/* SECTION */
 
 /* Section Hero */
 .hero {
@@ -58,31 +83,15 @@ body {
 
 .hero .container {
     height: 400px;
+    padding-top: 20px;
     max-width: 960px;
-    background: url(../img/carrossel.jpg) no-repeat center center;
+    /* width: 100%; */
+    background: url("../img/carrossel.jpg") no-repeat center center;
     background-size: cover;
     box-shadow: 1px 1px 5px #000;
 }
 
-.setadireita {
-    width: 50px;
-    height: 40px;
-    margin-top: -215px;
-    color: white;
-    margin-left: 1090px;
-    position: absolute;
-}
-
-.setaesquerda {
-    width: 50px;
-    height: 40px;
-    margin-top: -220px;
-    margin-left: 210px;
-    color: white;
-    position: absolute;
-}
-
-/* SALES */
+/* Section Sales */
 .sales {
     margin-top: 40px;
 }
@@ -90,11 +99,11 @@ body {
 .sales .container {
     display: flex;
     justify-content: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
+    /* padding: 10px; */
 }
 
-/* MEDIA QUERY*/
 @media (min-width: 1200px) {
     .sales .container {
         justify-content: space-between;
@@ -104,6 +113,7 @@ body {
 }
 
 .sales__card {
+    /* border: 4px solid red; */
     width: 300px;
     margin: 0 10px;
     box-shadow: 1px 1px 5px #000;
@@ -113,7 +123,9 @@ body {
 }
 
 .card__image {
+    /* border: 4px solid blue; */
     width: 100%;
+    /* border-radius: 10px; */
     display: flex;
 }
 
@@ -153,23 +165,33 @@ body {
 }
 
 .status-new {
-    background: #dc9730;
+    background: #51d275;
 }
 
 .status-sale {
-    background: #51d275;
+    background: #dc9730;
 }
 
 /* Section Styles */
 /* .styles {
-    border: 40px solid red;
-} */
+    border: 4px solid red;
+  } */
 @media (min-width: 1200px) {
     .styles .container {
         justify-content: space-between;
         width: 100%;
         max-width: 960px;
     }
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .card:first-child h2 {
@@ -195,7 +217,7 @@ body {
 }
 
 .style-2 {
-    background: url("../img/industrial.png") no-repeat center left;
+    background: url("../img/FotoStyleIndustrial.svg") no-repeat center left;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -207,7 +229,7 @@ body {
     border-radius: 3px;
     content: "";
     position: absolute;
-    background: url("../img/industrial.png") no-repeat center left;
+    background: url("../img/FotoStyleIndustrial.svg") no-repeat center left;
     filter: sepia(0%);
     top: 0;
     right: 0;
@@ -220,7 +242,7 @@ body {
 }
 
 .style-3 {
-    background: url("../img/moderno.png") no-repeat center left;
+    background: url("../img/FotoStyleModern.svg") no-repeat center left;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -230,7 +252,7 @@ body {
     border-radius: 3px;
     content: "";
     position: absolute;
-    background: url("../img/moderno.png") no-repeat center left;
+    background: url("../img/FotoStyleModern.svg") no-repeat center left;
     filter: sepia(0%);
     top: 0;
     right: 0;
@@ -243,7 +265,7 @@ body {
 }
 
 .style-4 {
-    background: url("../img/classico.png") no-repeat center left;
+    background: url("../img/FotoStyleClassic.svg") no-repeat center left;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -253,7 +275,7 @@ body {
     border-radius: 3px;
     content: "";
     position: absolute;
-    background: url("../img/classico.png") no-repeat center left;
+    background: url("../img/FotoStyleClassic.svg") no-repeat center left;
     filter: sepia(0%);
     top: 0;
     right: 0;
@@ -315,7 +337,7 @@ body {
     letter-spacing: 1px;
 }
 
-.social-media a {
+.social-media {
     margin-right: 25px;
 }
 
